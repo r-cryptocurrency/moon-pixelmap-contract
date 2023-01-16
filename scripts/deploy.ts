@@ -1,8 +1,8 @@
 import { ethers } from "hardhat";
 
 async function main() {
-  const PixelMap = await ethers.getContractFactory("PixelMap");
-  const pixelMap = await PixelMap.deploy(
+  const MoonPlace = await ethers.getContractFactory("MoonPlace");
+  const moonPlace = await MoonPlace.deploy(
     "MOONPLACE",
     "MoonPlace",
     "0x0057ac2d777797d31cd3f8f13bf5e927571d6ad0",
@@ -11,8 +11,8 @@ async function main() {
     //    ethers.utils.parseEther("100"),
     0
   );
-  await pixelMap.deployed();
-  console.log("PixelMap Contract: ", pixelMap.address);
+  await moonPlace.deployed();
+  console.log("PixelMap Contract: ", moonPlace.address);
   // const NameService = await ethers.getContractFactory("RedditNameService");
   // const nameService = await NameService.deploy();
   // await nameService.deployed();
