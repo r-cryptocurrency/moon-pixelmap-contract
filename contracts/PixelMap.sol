@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract PixelMap is ERC721URIStorage, Ownable {
+contract MoonPlace is ERC721URIStorage, Ownable {
     uint256 constant ROW_COUNT = 100;
     uint256 constant COL_COUNT = 100;
 
